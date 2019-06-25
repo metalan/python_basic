@@ -28,9 +28,12 @@ def procedimiento():
 # Construir un pequeño programa que convierta números binarios en enteros.
 """
 
-def bin_a_int(numero):
-    largo = len(numero)
+
+def bin_a_int(numero=111111):
+    largo = len(str(numero))
     total = 0
 
     for cont in range(0, largo):
-        total +=
+        total += 2 ** cont
+
+    print(total)
