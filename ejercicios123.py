@@ -55,3 +55,79 @@ def puntuacion(puntos, ganado=True):
     else:
         print(puntos)
         empezar_de_nuevo()
+
+"""
+Ejercicio 1
+Determinar la cantidad de dígitos de un numero (1- 100000)
+"""
+
+
+def ej1():
+    print(len(str(input("Escribe un número y te digo cuantos dígitos tiene:"))))
+
+
+"""
+Ejercicio 2 
+Para un numero N menor de 100. Mostrar la suma de los cuadrados 
+de los números que están separados entre si cuatro posiciones.
+"""
+
+
+def ej2(n):
+    if n < 100:
+        total = 0
+        while n < 100:
+            total += n**2
+            n += 4
+
+"""
+Ejercicio 3
+Imprimir 10 veces la serie de números de 1 a 10.
+"""
+
+
+def ej3():
+    for cont in range(0, 10):
+        for wr in range(1, 11):
+            print(wr, "")
+
+"""
+Ejercicio 4
+Para un número N imprimir su tabla de multiplicar.
+"""
+
+
+def ej4(n):
+    for tabla in range(0, 11):
+        print(n, "x", tabla, "= ", n * tabla)
+
+"""
+Ejercicio 5
+Identificar si la suma de los dígitos de un numero es par o impar.
+"""
+
+
+def ej5(num1):
+    total = 0
+    for b in str(num1):
+        total += int(b)
+    if total % 2 == 0:
+        print(num1, " es par")
+    else:
+        print(num1, " es impar")
+
+"""
+Ejercicio 6
+Solicitar un número e imprimir los dígitos pares de este.
+"""
+
+
+
+"""
+Ejercicio 7
+Los números de las claves de dos cajas fuertes están mezcladas 
+en un número entero llamado clave maestra. Determine ambas claves, 
+la primera clave se construye con los dígitos impares de la clave 
+maestra y la segunda con los pares. 
+Ejemplo: Clave Maestra= 12345, clave1=135, clave2=24.
+"""
