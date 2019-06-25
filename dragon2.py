@@ -20,11 +20,12 @@ def cheqcueva(CambiarCueva):
         print("El dragon te come de un bocado....")
 
 
-EmpezarNuevo = ("si")
+def empezar_de_nuevo():
+    EmpezarNuevo = ("si")
 
-while EmpezarNuevo == ("s") or EmpezarNuevo == ("si"):
-    introduccion()
-    NumCaverna = CambiarCueva()
-    cheqcueva(NumCaverna)
-    print("Quieres jugar de nuevo? (si o no)")
-    EmpezarNuevo = input()
+    while EmpezarNuevo == ("s") or EmpezarNuevo == ("si"):
+        introduccion()
+        NumCaverna = CambiarCueva()
+        cheqcueva(NumCaverna)
+        print("Quieres jugar de nuevo? (si o no)")
+        EmpezarNuevo = input()

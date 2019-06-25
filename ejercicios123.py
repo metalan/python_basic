@@ -23,17 +23,35 @@ def procedimiento():
         print(imprimir)
 
 """
-# Python 2
-# Ejercicio 5
-# Construir un pequeño programa que convierta números binarios en enteros.
+Python 2
+Ejercicio 5
+Construir un pequeño programa que convierta números binarios en enteros.
 """
 
 
 def bin_a_int(numero=111111):
     largo = len(str(numero))
     total = 0
-
     for cont in range(0, largo):
         total += 2 ** cont
-
     print(total)
+
+"""
+Python 3
+Ejercicio 1
+
+Diseñar un sistema de puntos para el juego El reino del dragón:
+La idea es la siguiente: mientras el jugador vaya ganando, ira acumulando puntos.
+Ejemplo: Si el jugador entra en la primera cueva y gana el tesoro, se le acreditan 
+100 puntos, entra en la segunda cueva y gana el tesoro, se le acreditan otros 100 
+puntos. Si el jugador pierde, saldrá en pantalla el total de los puntos que realizo 
+y la opción de empezar de nuevo.
+"""
+
+
+def puntuacion(puntos, ganado=True):
+    if ganado:
+        puntos += 100
+    else:
+        print(puntos)
+        empezar_de_nuevo()
